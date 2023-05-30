@@ -17,69 +17,83 @@ footer{
     padding:0px;
 }
 h3{
-    font-size: 40px;
+    font-size: 50px;
 }
 p{
     color: black;
 }
-
-.flex{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
 .container{
     max-width: 1400px;
     /* o mesmo espaçamento da direita será o da esquerda por isso o 0: */
     margin: 0 auto; 
     padding: 0 5%;
 }
-.flex{
+
+header{
+    background-position: center;
+    /* o cover diz que a imagem terá que ocupar todo o header disponivel */
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav{
+     position: fixed;
+    /* top: 0;
+    left: 0; */
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    /* justify deixará todos os itens com a mesma distancia */
+    justify-content: flex-end;
 }
-header{
-    width: 100%;
-    padding: 60px 4%;
-    position: fixed;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
+nav.rolagem{
+    background-color: aqua;
+}
+nav a img{
+    height: 100px;
 }
 
-header a img{
-    height: 100px;
-    margin: 0px 0px 0px 20px;
-}
-header ul li{
-    display: inline-block;
+nav ul a{
+    color: white;
     margin: 0 15px;
-}
-header ul li a{
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    list-style-type: none;
+    /* uppercase deixa os textos em maiúsculo */
     text-transform: uppercase;
+    display: inline-block;
     font-size: 14px;
 
 }
-.banner{
-    background-position: 100% 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 100vh;
-    
+
+nav ul a::after{
+    content: "" ;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+}
+ 
+nav ul a:hover::after{
+    width: 100%;
+}
+
+/* caso eu não quisesse a animação em algum item do nav, eu poderia fazer da seguinte forma: Colocando o not depois do "a", mas colocando o nome da tag antes
+nav ul a:not(.botao)::after{
+    content: "" ;
+    background-color: red;
+    height: 3px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+} */
+
+.banner {
     display: flex;
-    align-items: center;
     justify-content: center;
-    color: white;
 }
 .banner .banner-text{
+    margin: 54px 0px 250px 0px;
     text-align: center;
     padding: 0 90px;
 }
+
 .banner .banner-text h1{
     font-size: 96px;
     color: white;
@@ -89,36 +103,7 @@ header ul li a{
     color: white;
     font-weight: lighter;
     margin: 18px 0;
-} 
-
-header.rolagem{
-    background-color: rgb(50, 15, 0);
-    height: 70px;
-    padding: 5px ;
 }
-header.rolagem img{
-   height: 70px;
-   padding: 2px;
-}
-header.rolagem a, header.rolagem i{
-    color: white;
-    font-size: 14px;
-}
-
-
-header ul li a::after{
-    content: "" ;
-    background-color: rgb(255, 255, 255);
-    height: 1px;
-    width: 0%;
-    display: block;
-    transition: 0.3s;
-}
- 
-header ul li a:hover::after{
-    width: 100%;
-}
-
 /* História */
 .historia{
     background-color:  rgba(189, 176, 176, 0.601);
