@@ -1,0 +1,386 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+
+body{
+    background-color: rgba(169, 137, 137, 0.384);
+}
+section,
+footer{
+    padding:0px;
+}
+h3{
+    font-size: 40px;
+}
+p{
+    color: black;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container{
+    max-width: 1400px;
+    /* o mesmo espaçamento da direita será o da esquerda por isso o 0: */
+    margin: 0 auto; 
+    padding: 0 5%;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header{
+    width: 100%;
+    padding: 60px 4%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+
+header a img{
+    height: 100px;
+    margin: 0px 0px 0px 20px;
+}
+header ul li{
+    display: inline-block;
+    margin: 0 15px;
+}
+header ul li a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-size: 14px;
+
+}
+.banner{
+    background-position: 100% 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+.banner .banner-text{
+    text-align: center;
+    padding: 0 90px;
+}
+.banner .banner-text h1{
+    font-size: 96px;
+    color: white;
+}
+.banner .banner-text h3{
+    font-size: 20px;
+    color: white;
+    font-weight: lighter;
+    margin: 18px 0;
+} 
+
+header.rolagem{
+    background-color: rgb(50, 15, 0);
+    height: 70px;
+    padding: 5px ;
+}
+header.rolagem img{
+   height: 70px;
+   padding: 2px;
+}
+header.rolagem a, header.rolagem i{
+    color: white;
+    font-size: 14px;
+}
+
+
+header ul li a::after{
+    content: "" ;
+    background-color: rgb(255, 255, 255);
+    height: 1px;
+    width: 0%;
+    display: block;
+    transition: 0.3s;
+}
+ 
+header ul li a:hover::after{
+    width: 100%;
+}
+
+/* História */
+.historia{
+    background-color:  rgba(189, 176, 176, 0.601);
+}
+.petatlo-historia{
+    width: 70%;
+    text-align: justify;
+    /* background-color: aqua; */
+    margin: auto;
+}
+.petatlo-historia h3{
+    text-align: center;
+    /* background-color: rgba(0, 153, 255, 0.209); */
+    border-radius:  4px;
+    margin: 0px;
+    padding: 20px;
+}
+.petatlo-historia p{
+    padding: 0px 10px 50px 10px;
+
+}
+/* noticias */
+
+.noticias{
+    text-align: center;
+    display: flex;
+    background-color: rgba(214, 197, 197, 0.601);
+    padding: 60px 0px;
+}
+.petatlo-noticia{
+    width: 70%;
+    margin: auto;
+
+}
+.petatlo-noticia img{
+    width: 220px;
+}
+.petatlo-noticia h3{
+    margin-bottom: 10px ;
+}
+.petatlo-noticia a{
+   text-align: center;
+}
+
+/*  MODALIDADES */
+.modalidade-1{
+    background-color: rgba(189, 176, 176, 0.601);
+    text-align: center;
+}
+.modalidade-1 h3{
+    padding: 40px 0px 20px 0px;
+}
+.modalidade-1 .box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: rgba(189, 176, 176, 0.601); */
+}
+/* .box{
+    padding-top: 100px;
+} */
+.color-1{
+    background-color: rgb(224, 221, 208);
+    /* border: 2px solid black; */
+    margin: 15px;
+    padding: 30px;
+    display: flex;
+    text-align: justify;
+    justify-content: space-around;
+    border-radius: 10px;
+    width: 70%;
+}
+.color-1 .modalidade-texto h3{
+    padding: 30px 0px 10px 0px;
+    text-align: justify;
+}
+.modalildade .modalidade-texto{
+    padding: 0 40px;
+}
+.modalildade .modalidade-texto h3{
+    padding: 50px;
+    font-size: 56px;
+}
+.modalildade .modalidade-texto p{
+    margin: 5px 0 10px 0;
+}
+.modalildade .modalidade-imagem{
+    width: 50%;
+}
+
+.modalidade-imagem img{
+    width: 350px;
+    height: 250px;
+}
+
+.btn{
+    background-color: rgb(55, 31, 25);
+    color: aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    padding: 8px 12px;
+    margin: 30px 0px;
+}
+.btn:hover{
+    background-color: rgba(80, 54, 47, 0.613);
+}
+
+/* medalhistas: */
+
+.medalistas{
+    text-align: center;
+    margin: auto;
+    padding: 20px 0px 50px;
+    margin: 20px;
+}
+.petatlo-medalhas{
+    width: 70%;
+    margin: auto;
+}
+.petatlo-medalhas p{
+    padding-bottom: 20px;
+}
+/* INTEGRANTES: */
+.integrantes{
+    background-color: rgba(189, 176, 176, 0.601);
+    padding: 20px 0px 70px 0px;
+}
+.integrantes h3{
+    text-align: center;
+    padding: 10px;
+}
+.integrantes p{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+}
+.integrantes .card-item{
+    background-color: aliceblue;
+    margin: 15px;
+    border-radius: 14px;
+    text-align: center;
+    width: 390px;
+}
+.integrantes .card-item img{
+    /* border-radius: 100%; */
+    width: 200px ;
+    display: block;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+.integrantes .card-item .nome-user{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 15px;
+    transition: 0.10s;
+}
+.integrantes .card-item .integrantes-bio{
+    font-size: 14px;
+    padding: 0 15px;
+    transition: 0.10s;
+}
+.integrantes .card-item:hover{
+    background-color: rgb(55, 31, 25);
+    margin-top: -5px;
+    transition: 0.7s;
+}
+.integrantes .card-item:hover .nome-user,
+.integrantes .card-item:hover .integrantes-bio{
+    color: white;
+}
+/* TABELA: */
+.medalistas{
+    .imagem{
+        vertical-align: middle;
+        width: 15%;
+        padding: 4px 0;
+    }
+
+    .imagem2{
+        vertical-align: middle;
+        width: 10%;
+        padding: 4px 0;
+    }
+
+    .ouro{
+        background-color: #f7f6a8;
+    }
+
+    .prata{
+        background-color: #dce5e5;
+    }
+
+    .total{
+        background-color: #ebefef;
+    }
+
+    .bronze{
+        background-color: #ffdab9;
+    }
+
+    .padrão{
+        background-color: #ffffff;
+    }
+
+}
+/* SOBRE O TRABALHO: */
+.sobre-o-trabalho{
+    text-align: center;
+    margin: auto;
+    padding: 50px;
+}
+.petatlo-sobre{
+    width: 70%;
+    margin: auto;
+    text-align: justify;
+}
+.petatlo-sobre h3{
+    margin: 20px 0px;
+    text-align: center;
+    /* background-color:  rgba(0, 153, 255, 0.209); */
+}
+/* PAGINASS SECUNDARIAS */
+.box-2{
+    background-color: rgb(255, 254, 251);
+    width: 60%;
+    margin: auto;
+    padding: 30px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+/* FOOTER: */
+footer{
+    margin-top: 40px;
+    height: auto;
+    background-color: rgba(42, 42, 42, 0.71);
+    text-align: center;
+}
+footer .container{
+    display: flex;
+    justify-content:center;
+}
+footer .links{
+    padding: 50px;
+}
+footer img{
+    margin: 30px;
+    width: 280px;
+}
+footer i{
+    color: white;
+    font-size: 23px;
+    /* background-color: aquamarine; */
+    padding: 10px;
+    margin: 10px 0px 2px 0px;
+    border-radius: 5px;
+}
+footer p{
+    color: white;
+    padding-bottom: 10px ;
+}
