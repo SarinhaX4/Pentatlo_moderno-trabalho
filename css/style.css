@@ -368,6 +368,11 @@ header ul li a:hover::after{
     margin-top: 20px;
     border-radius: 10px;
 }
+/* bibliografiaL */
+    .bibliografia .box-2 h2{
+        font-size: 15px;
+        color: rgb(80, 58, 52);
+    }
 /* FOOTER: */
 footer{
     margin-top: 40px;
