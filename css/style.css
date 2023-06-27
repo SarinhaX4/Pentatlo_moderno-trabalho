@@ -145,35 +145,34 @@ header ul li a:hover::after{
 .noticias{
     text-align: center;
     background-color: rgba(214, 197, 197, 0.601);
-    padding: 60px 0px;
+    padding: 20px 0px 100px 0px;
+}
+.noticias h3{
+    margin: 40px 0px;
 }
 .petatlo-noticia{
     width: 70%;
     margin: auto;
+    display: inline-flex;
 }
 .petatlo-noticia iframe{
     height: 310px;
+    border-radius: 5px;
 }
-.petatlo-noticia h3{
-    margin-bottom: 5px ;
-    padding: 0px 0px 30px 0px;
-}
-.pentatlo-noticias-link{
+.petatlo-noticia a{
     display: inline-block;
     color: black;
-    padding: 25px;
-}
-.pentatlo-noticias-link a{
-    margin: 0px 110px 0px 110px;
-    padding: 10px;
-    border-radius: 5px;
+    margin: 10px;
+    padding: 8px 110px;
+    border-radius: 3px;
     background-color: rgb(55, 31, 25);
     color: white;
     text-decoration: none;
     font-size: 13px;
     transition: 0.3s;
 }
-.pentatlo-noticias-link a:hover{
+
+.petatlo-noticia a:hover{
     background-color: rgba(98, 74, 67, 0.613);
 }
 
@@ -191,9 +190,39 @@ header ul li a:hover::after{
     justify-content: center;
     /* background-color: rgba(189, 176, 176, 0.601); */
 }
-/* .box{
-    padding-top: 100px;
-} */
+
+/* #info1{
+    order: 1;
+}
+#info2{
+    order: 2;
+}
+#info3{
+    order: 1;
+}
+#info4{
+    order: 2;
+}
+#info5{
+    order: 1;
+}
+#info6{
+    order: 2;
+}
+#info7{
+    order: 1;
+}
+#info8{
+    order: 2;
+}
+
+#info9{
+    order: 1;
+}
+#info10{
+    order: 2;
+}  */
+
 .color-1{
     background-color: rgb(224, 221, 208);
     /* border: 2px solid black; */
@@ -206,7 +235,7 @@ header ul li a:hover::after{
     width: 70%;
 }
 .color-1 .modalidade-texto h3{
-    padding: 30px 0px 10px 0px;
+    padding: 20px 0px 20px 0px;
     text-align: justify;
 }
 .modalildade .modalidade-texto{
@@ -226,8 +255,15 @@ header ul li a:hover::after{
 .modalidade-imagem img{
     width: 350px;
     height: 250px;
+    border-radius: 5px;
+}
+.modalidade-imagem .caption{
+    color: rgb(71, 71, 71);
+    font-style: italic;
+    font-size: 14px;
 }
 
+  
 .btn{
     background-color: rgb(55, 31, 25);
     color: aliceblue;
@@ -256,6 +292,65 @@ header ul li a:hover::after{
 .petatlo-medalhas p{
     padding-bottom: 20px;
 }
+
+/* CAROUSEL */
+.carousel {
+    width: 400px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slides {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .slide img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  
+  .caption {
+    margin-top: 10px;
+    font-size: 16px;
+    color: white;
+  }
+  
+  .prev-btn,
+  .next-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .prev-btn {
+    left: 0;
+  }
+  
+  .next-btn {
+    right: 0;
+  }
+  
 /* INTEGRANTES: */
 .integrantes{
     background-color: rgba(189, 176, 176, 0.601);
@@ -298,6 +393,8 @@ header ul li a:hover::after{
     font-size: 14px;
     padding: 0 15px;
     transition: 0.10s;
+    text-align: justify;
+
 }
 .integrantes .card-item:hover{
     background-color: rgb(55, 31, 25);
@@ -367,12 +464,8 @@ header ul li a:hover::after{
     padding: 30px;
     margin-top: 20px;
     border-radius: 10px;
+    text-align: justify;
 }
-/* bibliografiaL */
-    .bibliografia .box-2 h2{
-        font-size: 15px;
-        color: rgb(80, 58, 52);
-    }
 /* FOOTER: */
 footer{
     margin-top: 40px;
